@@ -24,11 +24,11 @@
     </div>
   </header>
 
-
+<!-- Left side -->
   <div class="container-fluid">
 
     <div class="row">
-      <div class="col-md-3 pl-2">
+      <div class="col-md-3">
         <div class="card" style="width: 22rem;">
           <div class="card-body">
             <h2><strong>Search for a City:</strong></h2>
@@ -41,84 +41,36 @@
           </div>
         </div>
         <div>
-          <!--clear history button  -->
+      
           <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
           <ul id="city-list" class="list-group"></ul>
         </div>
       </div>
-      <!-- main forecast card -->
-      <div class="col-md-9">
-        <div id="current-weather" class="card">
-          <div class="card-body">
-            <div id="city-date-icon">
-              <span id="city-name">
-              </span>
-              <span id="current-icon"></span>
-            </div>
-            <ul>
-              <p class="card-text" id="current-temp"></p>
-              <p class="card-text" id="current-humidity"></p>
-              <p class="card-text" id="current-wind"></p>
-              <p class="card-text" id="current-uv"></p>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 5 day forecast cards  -->
-    <div class="row">
-      <div id="forecast-weather" class="col-md-9">
-        <h3>5-Day Forecast:</h3>
-        <div id="forecast-cards">
 
-          <div class="card forecast">
-            <div id="forecast1" class="card-body">
-              <span class="card-title" id="forecast-date1"></span>
-              <span id="forecast-icon1"></span>
-              <p class="card-text" id="forecast-temp1"></p>
-              <p class="card-text" id="forecast-humidity1"></p>
-            </div>
-          </div>
 
-          <div class="card forecast">
-            <div id="forecast2" class="card-body">
-              <span class="card-title" id="forecast-date2"></span>
-              <span id="forecast-icon2"></span>
-              <p class="card-text" id="forecast-temp2"></p>
-              <p class="card-text" id="forecast-humidity2"></p>
-            </div>
-          </div>
+<!-- Right side -->
 
-          <div class="card forecast">
-            <div id="forecast3" class="card-body">
-              <span class="card-title" id="forecast-date3"></span>
-              <span id="forecast-icon3"></span>
-              <p class="card-text" id="forecast-temp3"></p>
-              <p class="card-text" id="forecast-humidity3"></p>
-            </div>
-          </div>
+<div id="weatherInfo">
 
-          <div class="card forecast">
-            <div id="forecast4" class="card-body">
-              <span class="card-title" id="forecast-date4"></span>
-              <span id="forecast-icon4"></span>
-              <p class="card-text" id="forecast-temp4"></p>
-              <p class="card-text" id="forecast-humidity4"></p>
-            </div>
-          </div>
+  <!--Weather Overview for the Day-->
+  <section id="weather-overview">
+      <div id="weather-overview-header"></div>
+      <div id="weather-icon"></div>
 
-          <div class="card forecast">
-            <div id="forecast5" class="card-body">
-              <span class="card-title" id="forecast-date5"></span>
-              <span id="forecast-icon5"></span>
-              <p class="card-text" id="forecast-temp5"></p>
-              <p class="card-text" id="forecast-humidity5"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <div id="weather-overview-info"></div>
+
+   </section>
+
+
+   <!--5 Day Weather Forecast-->
+   <section id="weather-forecast">
+
+  </section>
+
+ </div>
+</div>
+
+</div>
 
 
 
