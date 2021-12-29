@@ -24,53 +24,52 @@
     </div>
   </header>
 
-<!-- Left side -->
-  <div class="container-fluid">
+  <main>
 
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card" style="width: 22rem;">
-          <div class="card-body">
-            <h2><strong>Search for a City:</strong></h2>
-            <form class="form-inline">
-              <div class="form-group">
-                <input type="text" class="form-control" id="city-input">
-              </div>
-              <button id="search-button" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-            </form>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem;">
+            <div class="card-body">
+              <h2><strong>Search for a City:</strong></h2>
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="city-input">
+                </div>
+                <button id="search-button" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <div>
+            <!--clear history button  -->
+            <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+            <ul id="city-list" class="list-group"></ul>
           </div>
         </div>
-        <div>
-      
-          <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
-          <ul id="city-list" class="list-group"></ul>
+
+        <!-- main forecast card -->
+        <div class="row">
+          <div class="col-md-9" id="current-weather">
+            
+          </div>
         </div>
       </div>
 
+      <!-- 5 day forecast cards  -->
+      <div class="row fiveDay">
+        <div id="forecast-weather" class="col-md-9">
+          <h3>5-Day Forecast:</h3>
+          <div id="forecast-cards" class="row">
 
-<!-- Right side -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div id="weatherInfo">
+  </main>
 
-  <!--Weather Overview for the Day-->
-  <section id="weather-overview">
-      <div id="weather-overview-header"></div>
-      <div id="weather-icon"></div>
-
-      <div id="weather-overview-info"></div>
-
-   </section>
-
-
-   <!--5 Day Weather Forecast-->
-   <section id="weather-forecast">
-
-  </section>
-
- </div>
-</div>
-
-</div>
 
 
 
