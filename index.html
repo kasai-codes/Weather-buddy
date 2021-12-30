@@ -17,6 +17,7 @@
 
 <body>
 
+  
   <header>
     <div class="jumbotron container-fluid mt-2 text-center p-2"
       style="background-image: linear-gradient(to right, blue, teal);color: white;">
@@ -29,46 +30,41 @@
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-md-3">
-          <div class="card" style="width: 22rem;">
-            <div class="card-body">
-              <h2><strong>Search for a City:</strong></h2>
-              <form class="form-inline">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="city-input">
-                </div>
-                <button id="search-button" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-              </form>
-            </div>
-          </div>
+        <div class="col-3 p-9" style="border:2px solid black;">
+  
           <div>
-            <!--clear history button  -->
-            <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
-            <ul id="city-list" class="list-group"></ul>
+            <h2><strong>Search for a City:</strong></h2>
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="text" class="form-control" id="city-input">
+                <button id="search-button" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+              </div>
+            </form>
           </div>
+
         </div>
 
-        <!-- main forecast card -->
-        <div class="row">
-          <div class="col-md-9" id="current-weather">
-            
+      
+       
+     
+          <div class="col-9 p-9" id="current-weather">
+
+             <!-- main forecast card -->
+            <h2>This is the right side</h2>
+
+
+            <!-- 5 day forecast cards  -->
+            <div id="forecast-cards">
+              <h3>5-Day Forecast:</h3>
+            </div>
+
           </div>
-        </div>
-      </div>
 
-      <!-- 5 day forecast cards  -->
-      <div class="row fiveDay">
-        <div id="forecast-weather" class="col-md-9">
-          <h3>5-Day Forecast:</h3>
-          <div id="forecast-cards" class="row">
+</div>
+</div>
+</main>
 
-            
-          </div>
-        </div>
-      </div>
-    </div>
 
-  </main>
 
 
 

@@ -16,8 +16,19 @@ fetch(cityUrl)
 .then(function (data) {
 console.log(data.main.temp)
 
-lat = data.coord.lat;
-lon = data.coord.lon;
+
+
+var currentWeather =`
+<div id="current" class="card">
+<p> Temperature: ${data.main.temp}</p>
+
+</div>
+`;
+
+currentWeatherDiv.innerHTML = currentWeather
+
+// lat = data.coord.lat;
+// lon = data.coord.lon;
 
 })
 }
@@ -62,14 +73,7 @@ searchBtn.addEventListener("click", clickHandler);
 
 
 
-var currentWeather =`
-<div id="current" class="card">
-<p> Temperature: ${data.main.temp}</p>
 
-</div>
-`;
-
-currentWeatherDiv.innerHTML = currentWeather
 
 
 
