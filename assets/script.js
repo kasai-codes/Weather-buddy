@@ -1,7 +1,8 @@
 var searchBtn = document.getElementById("search-button");
 var userInput = document.getElementById("city-input");
 var currentWeatherDiv = document.getElementById("current-weather");
-var apiKey = e24a48d117f9490365fee8813aa9239b;
+var apiKey = "e24a48d117f9490365fee8813aa9239b";
+
 
 // city data
 function getCity(searchedCity) {
@@ -11,18 +12,19 @@ fetch(cityUrl)
 .then(function (response) {
 
   return response.json();
+
+getCity();
+
+})
+.then(function (data) {
+console.log(data.main.temp)
   var currentWeather =`
 <div id="current" class="card">
 <p> Temperature: ${data.main.temp}</p>
 
 </div>
 `;
-
-currentWeatherDiv.innerHTML = currentWeather
-})
-.then(function (data) {
-console.log(data.main.temp)
-
+currentWeatherDiv.innerHTML = currentWeather;
 })
 }
 
