@@ -123,7 +123,7 @@ function getWeather(lat, lon) {
                 var now = moment(data.daily[i].dt * 1000).format("ll");
 
                 fiveDayCards += `
-      <div class="card-flex">
+      
       <div class="forecast-cards">
       <img class="daily-forecast-icon" src="${dailyURL}" alt="current weather icon"/>
       <p class="now">${now}</p>

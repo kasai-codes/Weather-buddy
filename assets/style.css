@@ -20,6 +20,10 @@ body {
  padding: 10px;
 }
 
+.forecast-cards {
+border: black solid 2px;
+}
+
 
 .city-buttons {
   width:100%;
