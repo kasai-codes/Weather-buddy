@@ -5,6 +5,7 @@ var weatherMain = document.getElementById("weather-main")
 var weatherTitle = document.getElementById("weather-main-title")
 var weatherMaininfo = document.getElementById("weather-main-info")
 var forecast = document.getElementById("forecast-cards")
+var storedCityName =document.getElementById("storedUserInput")
 var apiKey = "e24a48d117f9490365fee8813aa9239b";
 // empty variable to store searched city, empty array to store them as an array and empty strin
 var searchedCity;
@@ -40,7 +41,7 @@ function printUserInput(event) {
 
     var storedUserInput = JSON.parse(localStorage.getItem("city-searched"))
     if (searchedCity) {
-        storedUserInput.innerHTML = "";
+        storedCityName.innerHTML = "";
 
         for (var i = 0; i < storedUserInput.length; i++) {
             const storedInput = document.createElement("button");
@@ -51,7 +52,7 @@ function printUserInput(event) {
                 getCity(storedInput.textContent);
             });
 
-            storedUserInput.append(storedInput);
+            storedCityName.append(storedInput);
         }
     }
 }
