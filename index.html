@@ -30,7 +30,7 @@
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-3 p-9" style="border:2px solid black;">
+        <div class="col-3 p-9">
 
           <div>
             <h2><strong>Search for a City:</strong></h2>
@@ -40,6 +40,8 @@
                 <button id="search-button" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
               </div>
             </form>
+
+            <div id="storedInput"></div>
           </div>
 
         </div>
@@ -50,11 +52,16 @@
         <div class="col-9 p-9" id="current-weather">
 
           <!-- main forecast card -->
-          <h2>This is the right side</h2>
+          <div id="weather-main">
+            <div id="weather-main-title"></div>
+            <div id="weather-image"></div>
+
+            <div id="weather-main-info"></div>
+          </div>
 
 
           <!-- 5 day forecast cards  -->
-          <div id="fiveday">
+          <div id="forecast-cards">
             
           </div>
 
@@ -62,6 +69,7 @@
 
       </div>
     </div>
+    
   </main>
 
 
