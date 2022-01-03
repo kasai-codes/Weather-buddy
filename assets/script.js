@@ -117,14 +117,14 @@ function getWeather(lat, lon) {
                     // break used to exit loop 
                     break;
                 }
-
-                var dailyURL = "https://openweathermap.org/img/wn/" + dailyIcon + "@2x.png";
                 var dailyIcon = data.daily[i].weather[0].icon;
+                var dailyURL = "https://openweathermap.org/img/wn/" + dailyIcon + "@2x.png";
+
                 var now = moment(data.daily[i].dt * 1000).format("ll");
 
                 fiveDayCards += `
       
-      <div class="forecast-cards">
+      <div class="forecast-card">
       <img class="daily-forecast-icon" src="${dailyURL}" alt="current weather icon"/>
       <p class="now">${now}</p>
       <p>Temp: ${data.daily[i].temp.day}°F</p>
@@ -132,7 +132,7 @@ function getWeather(lat, lon) {
       <p>Wind: ${data.daily[i].wind_speed} MPH</p>
       <p>UVI: <span class="uvi-forecast" data-uvi="${data.daily[i].uvi}">${data.daily[i].uvi}</span></p>
       </div>
-      </div>
+      
       `;
 
 
