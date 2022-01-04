@@ -30,6 +30,8 @@ margin: 5px 40px;
 
 .cityBtn {
   width:100%;
-  background-color: #194d6c;
-  color: black;
+  background-color: teal;
+  color: white;
+font-size: larger;
+margin: 5px;
 }

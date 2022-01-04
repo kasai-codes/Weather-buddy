@@ -5,7 +5,7 @@ var weatherMain = document.getElementById("weather-main")
 var weatherTitle = document.getElementById("weather-main-title")
 var weatherMaininfo = document.getElementById("weather-main-info")
 var forecast = document.getElementById("forecast-cards")
-var storedCityName = document.getElementById("storedcity")
+var storedCityName = document.getElementById("storedCity")
 var apiKey = "e24a48d117f9490365fee8813aa9239b";
 // empty variable to store searched city, empty array to store them as an array and empty strin
 var searchedCity;
