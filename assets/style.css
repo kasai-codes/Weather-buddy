@@ -28,13 +28,8 @@ margin: 5px 40px;
 }
 
 
-.city-buttons {
+.cityBtn {
   width:100%;
   background-color: #194d6c;
-  border:none;
-  color: #e5bbae;
-  border-radius:50px;
-  padding:10px;
-  margin:7px 0;
-  text-transform:capitalize;
+  color: black;
 }
