@@ -34,7 +34,7 @@ function clickHandler(event) {
 
     }
     getCity(searchedCity);
-
+console.log(data)
 }
 
 // print searched cities as button from local storage
