@@ -5,7 +5,7 @@ var weatherMain = document.getElementById("weather-main")
 var weatherTitle = document.getElementById("weather-main-title")
 var weatherMaininfo = document.getElementById("weather-main-info")
 var forecast = document.getElementById("forecast-cards")
-var storedCityName =document.getElementById("storedcity")
+var storedCityName = document.getElementById("storedcity")
 var apiKey = "e24a48d117f9490365fee8813aa9239b";
 // empty variable to store searched city, empty array to store them as an array and empty strin
 var searchedCity;
@@ -17,6 +17,7 @@ function storeUserInput(searchedCity) {
     cities.push(searchedCity);
 
     localStorage.setItem("city-searched", JSON.stringify(cities));
+    // printUserInput(true)
 }
 
 function clickHandler(event) {
@@ -29,7 +30,7 @@ function clickHandler(event) {
     if (searchedCity) {
         getCity(searchedCity);
         userInput.value = "";
-
+        printUserInput(event);
 
     }
     getCity(searchedCity);
@@ -38,6 +39,9 @@ function clickHandler(event) {
 
 // print searched cities as button from local storage
 function printUserInput(event) {
+    // if (justSearched) {
+    //     console.log("running printUserInput")
+    // }
 
     var storedUserInput = JSON.parse(localStorage.getItem("city-searched"))
     if (searchedCity) {
