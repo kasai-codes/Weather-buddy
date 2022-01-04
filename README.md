@@ -24,7 +24,11 @@ This Weather Dashboard is an application in which the user can search for a cert
  
 
 ## Screenshot
+<<<<<<< HEAD
 ![Screenshot of dashboard](assets/images/screenshot.png)
+=======
+![Screenshot](assets/images/screenshot.png)
+>>>>>>> 4cb344976c463dbf94e908bb7a373b8a6c1748f4
 
 ## Deployment 
 
